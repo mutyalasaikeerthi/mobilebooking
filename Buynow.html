@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Booking Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"], select {
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+
+    input[type="submit"] {
+        background-color: #0074D9;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Mobile Booking</h1>
+    <body background="https://t3.ftcdn.net/jpg/06/29/87/72/360_F_629877278_ThUVjSB4C1zvagGxqhkKruSs3vm3uRvo.jpg" style="background-size:100% 100%;">
+    <form action="/submit-mobile" method="POST">
+        <label for="mobile">Mobile:</label>
+        <select id="mobile" name="mobile">
+            <option value="  ">  </option>
+            <option value="Redmi node 10s">Redmi node 10s</option>
+            <option value="Iphone 15">Iphone 15</option>
+            <option value="Realme 11 Pro">Realme 11 Pro</option>
+            <option value="OnePlus">OnePlus</option>
+            <option value="Samsung">Samsung</option>
+            <option value="Motorola">Motorola</option>
+            <option value="Philips">Philips</option>
+            <option value="Barbie Phone">Barbie phone</option>
+            <option value="Ikall">Ikall</option>
+        </select>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+        <label for="phoneno">Phoneno:</label>
+        <input type="text" id="phoneno" name="phoneno" required>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <input type="submit" value="Book Now">
+    </form>
+</div>
+</body>
+</html>

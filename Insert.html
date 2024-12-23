@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6fb3b8, #84fab0);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            margin-top: 100px;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 40px 30px;
+            width: 100%;
+            max-width: 450px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            color: #2a8a99;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 1rem;
+            color: #2a8a99;
+        }
+
+        input[type="text"], select {
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus, select:focus {
+            border-color: #70e1f5;
+            box-shadow: 0 0 8px rgba(112, 225, 245, 0.8);
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #0074D9;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+
+        input[type="submit"]:active {
+            transform: translateY(1px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            input[type="submit"] {
+                padding: 12px;
+            }
+
+            .container {
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            input[type="submit"] {
+                font-size: 1rem;
+                padding: 10px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mobile Booking</h1>
+        <form action="/submit-insert" method="POST">
+            <label for="mobile">Mobile:</label>
+            <select id="mobile" name="mobile">
+                <option value="">Select a Mobile</option>
+                <option value="Redmi node 10s">Redmi node 10s</option>
+                <option value="Iphone 15">Iphone 15</option>
+                <option value="Realme 11 Pro">Realme 11 Pro</option>
+                <option value="OnePlus">OnePlus</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Motorola">Motorola</option>
+                <option value="Philips">Philips</option>
+                <option value="Barbie Phone">Barbie phone</option>
+                <option value="Ikall">Ikall</option>
+            </select>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="phoneno">Phone Number:</label>
+            <input type="text" id="phoneno" name="phoneno" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

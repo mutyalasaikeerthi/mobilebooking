@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Record</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #eec3c9, #f7f2f1); /* Gradient Background */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Form Container Styling */
+        form {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            box-sizing: border-box;
+            margin-left: 100px;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        td {
+            padding: 10px;
+            font-size: 1.1rem;
+            color: #2c3e50;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            margin: 8px 0;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #ff6347;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(255, 99, 71, 0.8);
+            outline: none;
+        }
+
+        /* Button Styles */
+        button {
+            background-color: #ff6347;
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e55347;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Update Record</h1>
+    <form action="/update" method="POST">
+        <table align="center" cellpadding="2" cellspacing="2">
+            <tbody>
+                <tr>
+                    <td><label for="emailid">E-Mail ID:</label></td>
+                    <td><input type="text" name="emailid" id="emailid" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phoneno">New Phone Number:</label></td>
+                    <td><input type="text" name="phoneno" id="phoneno" required></td>
+                </tr>
+            </tbody>
+        </table>
+        <br><button type="submit">Update Record</button>
+    </form>
+
+</body>
+</html>

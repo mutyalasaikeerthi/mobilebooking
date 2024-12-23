@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Record</title>
+    <style>
+        /* Global Body Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff7f50, #f0f0f0); /* Gradient background */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* Form Container */
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        /* Heading Styles */
+        h1 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Button Styling */
+        button {
+            background-color: #ff7f50;
+            color: white;
+            padding: 14px 40px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e6703e;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        /* Additional Text Styling */
+        .subheading {
+            font-size: 1.2rem;
+            color: #333;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Display Record</h1>
+        <form action="/displayall" method="POST">
+            <p class="subheading">Press below button to display all records.</p>
+            <button type="submit">Display All Records</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile Store</title>
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ace9f3, #f3e8ac, #f4c2f3); /* Soft multi-color gradient */
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite; /* Smooth gradient animation */
+            transition: background-color 1s ease-in-out;
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Header and Navigation Styles */
+        header {
+            background: linear-gradient(90deg, #89c7d4, #a2d8ce, #77b9d4); /* Gradient for header */
+            color: #ffffff;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            color: #ffffff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+            background: linear-gradient(90deg, #6ec1e4, #78d3e9, #5fb6da); /* Gradient for nav items */
+        }
+        nav ul li a:hover {
+            background: linear-gradient(90deg, #f9d423, #ff4e50); /* Bold gradient on hover */
+            color: #ffffff;
+        }
+
+        /* Event Container and Card Styles */
+        .eventContainer {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        .eventCards {
+            width: 300px;
+            background: linear-gradient(145deg, #fdfdfd, #f3f4f7); /* Subtle gradient for cards */
+            border-radius: 1rem;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .eventCards:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(145deg, #f3f4f7, #fdfdfd); /* Reverse gradient on hover */
+        }
+        .eventCard-image img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
+        }
+        .eventCard-body {
+            text-align: center;
+            padding: 15px;
+            color: #333;
+        }
+        .eventCard-body h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            color: #4b0082; /* Indigo */
+        }
+        .eventCard-body h4 {
+            margin: 5px 0;
+            font-size: 1rem;
+            color: #8b4513; /* Saddle Brown */
+        }
+        .eventCard-body button {
+            background-color: #87ceeb; /* Sky blue */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .eventCard-body button a {
+            text-decoration: none;
+            color: white;
+        }
+        .eventCard-body button:hover {
+            background-color: #4682b4; /* Steel blue */
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Iconic Mobiles</h1>
+        <nav>
+            <ul>
+                <li><a href="/Index.html">Home</a></li>
+                <li><a href="/Products.html">Products</a></li>
+                <li><a href="/Contact.html">Contact</a></li>
+                <li><a href="/CRUD.html">CRUD</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="eventContainer">
+        <div class="eventCards">
+            <div class="eventCard-image">
+                <img src="https://d2xamzlzrdbdbn.cloudfront.net/products/67d54c6b-5771-4694-b7bb-3d9cdfd85ca9.jpg" alt="Redmi Note 10s">
+            </div>
+            <div class="eventCard-body">
+                <h3>Redmi Note 10s</h3>
+                <h4>Rs.16,999</h4>
+                <button><a href="/Buynow.html">Buy Now</a></button>
+            </div>
+        </div>
+
+        <div class="eventCards">
+            <div class="eventCard-image">
+                <img src="https://m.media-amazon.com/images/I/71HZ0tigFFL._AC_SS300_.jpg" alt="Realme 11 Pro">
+            </div>
+            <div class="eventCard-body">
+                <h3>Realme 11 Pro</h3>
+                <h4>Rs.17,999</h4>
+                <button><a href="/Buynow.html">Buy Now</a></button>
+            </div>
+        </div>
+
+        <div class="eventCards">
+            <div class="eventCard-image">
+                <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1691050131/Croma%20Assets/Communication/Mobiles/Images/275684_weks9p.png?" alt="One Plus">
+            </div>
+            <div class="eventCard-body">
+                <h3>One Plus</h3>
+                <h4>Rs.24,000</h4>
+                <button><a href="/Buynow.html">Buy Now</a></button>
+            </div>
+        </div>
+
+        <div class="eventCards">
+            <div class="eventCard-image">
+                <img src="https://m.media-amazon.com/images/I/81qbcjMUVsL._AC_UF894,1000_QL80_.jpg" alt="Samsung">
+            </div>
+            <div class="eventCard-body">
+                <h3>Samsung</h3>
+                <h4>Rs.10,999</h4>
+                <button><a href="/Buynow.html">Buy Now</a></button>
+            </div>
+        </div>
+
+        <div class="eventCards">
+            <div class="eventCard-image">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2021/9/WI/ZP/XB/58263536/motorola-smart-phone.jpg" alt="Motorola">
+            </div>
+            <div class="eventCard-body">
+                <h3>Motorola</h3>
+                <h4>Rs.6,500</h4>
+                <button><a href="/Buynow.html">Buy Now</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

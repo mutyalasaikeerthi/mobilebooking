@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Mobile Booking</title>
+    <style>
+        /* Global Body Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f0efee, #f0f0f0); /* Vibrant gradient */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* Form Container */
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        /* Heading Style */
+        h1 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Label Styling */
+        label {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        
+            text-align: left;
+        }
+
+        /* Input Fields */
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 2px solid #ddd;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #ff8c00;
+            background-color: #fff;
+            box-shadow: 0 0 8px rgba(255, 140, 0, 0.7);
+            outline: none;
+        }
+
+        /* Submit Button Styles */
+        input[type="submit"] {
+            background-color: #ff8c00;
+            color: white;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e07b00;
+        }
+
+        /* Button Active State */
+        input[type="submit"]:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Delete Mobile Booking</h1>
+        <form action="/delete-mobile" method="POST">
+            <label for="name">Enter Name to Delete:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter Name">
+            <input type="submit" value="Delete">
+        </form>
+    </div>
+
+</body>
+</html>
